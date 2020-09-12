@@ -113,7 +113,6 @@ class User(Resource):
 # we will add the resource to our API and specify its route,
 # then run our Flask application:
 api.add_resource(User, "/user/<string:name>")
-api.add_resource(
-    User, "/user/<string:name>/occupation/<string:occupation>", endpoint="occ")
+api.add_resource(User, "/user/<string:name>/occupation/<string:occupation>", endpoint="occ")
 
 app.run(debug=True)
